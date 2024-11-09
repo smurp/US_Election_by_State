@@ -8,14 +8,14 @@ The dark bordered states were the <i>swing states</i>.
 
 The more yellow the state, the more disagreement between the party of the senators elected and the party of the president.
 
-# <span style="color:red;">WARNING: the current data is random</span>
 
 [![View the Interactive Map](https://smurp.github.io/US_Election_by_State/USA_2024.svg)](https://smurp.github.io/US_Election_by_State/)
 
 <iframe src="./USA_2024.svg" width="100%" height="600px" style="border:none;" scrolling="no"></iframe>
 
-
 ---
+
+### <span style="color:red;">WARNING: the current data is random</span>
 
 ### Links
 - [View the GitHub repository](https://github.com/smurp/US_Election_by_State/)
