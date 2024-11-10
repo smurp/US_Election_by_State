@@ -1,23 +1,35 @@
 # US 2024 Election Map by State
 
-Explore a map showing the amount of disagreement of the presidential vote from the senatorial vote on a state-by-state basis for the 2024 U.S. election.
+## Purpose
+This visualization is designed to hilight discrepancies between Senatorial and Presidential races, by state.
+
+## Best Viewed
 
 For the best experience, view the interactive map on GitHub Pages at [smurp.github.io/US_Election_by_State](https://smurp.github.io/US_Election_by_State/).
-
-The dark bordered states were the <i>swing states</i>.
-
-The more yellow the state, the more disagreement between the party of the senators elected and the party of the president.
-
 
 [![View the Interactive Map](https://smurp.github.io/US_Election_by_State/USA_2024.svg)](https://smurp.github.io/US_Election_by_State/)
 
 <iframe src="./USA_2024.svg" width="100%" height="600px" style="border:none;" scrolling="no"></iframe>
 
+## Color Schemes
+The <i>swing states</i> are bordered in black.  You can toggle between a Neutral and a Partisan color scheme.
+
+| Partisan                                | Neutral                                       |
+|-----------------------------------------|-----------------------------------------------|
+| ![Partisan](img/Partisan.png)           | ![Neutral](img/Neutral.png)                   |
+| yellow - grey - yellow                  | red - grey - blue                             |
+| Brighter the yellow, the more skew      | The more blue, or red, the more skew that way |
+| Hide party but show skew                | Reveal party but skew harder to equate        |
+
+## A Plea and a Warning
+<span style="color:red;">WARNING: the data is currently random!</span> You can help by providing the data.
+Ideally, with the url from which the data was obtained and by what means.  Even if you can't figure out
+how to scrape it out of the source, perhaps I can help with that...
+
 ---
 
-### <span style="color:red;">WARNING: the current data is random</span>
-
 ### Links
+- [Original Hypothesis by Spoonamore](https://x.com/Spoonamore/status/1854912281865552027)
 - [View the GitHub repository](https://github.com/smurp/US_Election_by_State/)
 - [Map source on WikiMedia](https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg)
 
