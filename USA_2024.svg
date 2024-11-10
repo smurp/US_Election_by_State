@@ -286,6 +286,17 @@
 
 <path class="separator1" fill="none" d="m 215,493 v 55 l 36,45 m -251,-168 h 147 l 68,68 h 85 l 54,54 v 46"/>
 
+<!--
+    Above here is
+      from: https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg
+        on: 2024-11-09
+  -->
+
+<text class="containsRandom" x="500" y="540" font-size="1.2em" fill="red" font-weight="bold" style="display: none;">
+  Contains RANDOM Data
+</text>
+
+
 <foreignObject x="800" y="400" width="160" height="120">
   <body xmlns="http://www.w3.org/1999/xhtml">
     <form>
@@ -360,8 +371,12 @@
 
   function fillEveryStateWithColorInRange(colorRange) {
     allStates.forEach((stateCode) => {
-    // Generate a random value between -1 and 1
-      const stateVal = valueByState[stateCode] ?? Math.random() * 2 - 1;
+      // Generate a random value between -1 and 1
+      if (valueByState[stateCode] == null) {
+        document.querySelector('.containsRandom').style.display='';
+        valueByState[stateCode] = Math.random() * 2 - 1;
+      }
+      const stateVal = valueByState[stateCode];
       // Get a random color within the range
       const stateColor = colorInRange(stateVal, ...colorRange);
       // Apply the color to the state
@@ -377,8 +392,8 @@
 
   const redGreyBlue = [[200, 0, 0], [127, 127, 127], [0, 0, 200]];
   const yellowGreyYellow = [[255, 255, 0], [127, 127, 127], [255, 255, 0]];
-  const colorSchemes = {Neutral: yellowGreyYellow, Partisan: redGreyBlue};
-  const swingStates = 'az ga mi nc nv pa wi'.split(' ');
+  let colorSchemes = {Neutral: yellowGreyYellow, Partisan: redGreyBlue};
+  let swingStates = 'az ga mi nc nv pa wi'.split(' ');
   const allStates = 'ak al ar az ca co ct de fl ga hi ia id il in ks ky la ma md me mi mn mo ms mt nc nd ne nh nj nm nv ny oh ok or pa ri sc sd tn tx ut va vt wa wi wv wy'.split(' ');
 
   document.addEventListener("DOMContentLoaded", function() {
