@@ -5,9 +5,7 @@ This visualization is designed to hilight discrepancies between Senatorial and P
 
 ## Best Viewed
 
-For the best experience, view the interactive map on GitHub Pages at [smurp.github.io/US_Election_by_State](https://smurp.github.io/US_Election_by_State/).
-
-[![View the Interactive Map](https://smurp.github.io/US_Election_by_State/USA_2024.svg)](https://smurp.github.io/US_Election_by_State/)
+To view the interactive map see [smurp.github.io/US_Election_by_State](https://smurp.github.io/US_Election_by_State/).
 
 <iframe src="./USA_2024.svg" width="100%" height="600px" style="border:none;" scrolling="no"></iframe>
 
